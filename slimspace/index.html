@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--================================================================================
+	Item Name: Materialize - Material Design Admin Template
+	Version: 3.0
+	Author: GeeksLabs
+	Author URL: http://www.themeforest.net/user/geekslabs
+================================================================================ -->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+  <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+  <title>Slimspace- Space Management Simplified</title>
+
+  <!-- Favicons-->
+  <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+  <!-- Favicons-->
+  <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+  <!-- For iPhone -->
+  <meta name="msapplication-TileColor" content="#00bcd4">
+  <meta name="msapplication-TileImage" content="images/favicon/favicon-96x96.png">
+  <!-- For Windows Phone -->
+
+
+  <!-- CORE CSS-->
+  
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- Custome CSS-->    
+    <link href="css/custom/custom-style.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+
+  <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+  <link href="js/plugins/prism/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/fullcalendar/css/fullcalendar.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+</head>
+
+<body>
+  <!-- Start Page Loading -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>        
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- End Page Loading -->
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START HEADER -->
+  <header id="header" class="page-topbar">
+        <!-- start header nav-->
+        <div class="navbar-fixed">
+            <nav class="navbar-color deep-purple darken-4">
+                <div class="nav-wrapper">
+                    <ul class="left">                      
+                      <li><h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img src="images/materialize-logo2.png" alt="materialize logo"></a> <span class="logo-text">SlimSpace</span></h1></li>
+                    </ul>
+                    <div class="header-search-wrapper hide-on-med-and-down ">
+                        <i class="mdi-action-search"></i>
+                        <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Search for a Space"/>
+                    </div>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen"><i class="mdi-action-settings-overscan"></i></a>
+                        </li>
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light notification-button" data-activates="notifications-dropdown"><i class="mdi-social-notifications"><small class="notification-badge">5</small></i>
+                        
+                        </a>
+                        </li>                        
+                    </ul>
+            
+                    <!-- notifications-dropdown -->
+                    <ul id="notifications-dropdown" class="dropdown-content">
+                      <li>
+                        <h5>NOTIFICATIONS <span class="new badge">5</span></h5>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <a href="#!"><i class="mdi-action-add-shopping-cart"></i> Room 504 has been booked</a>
+                        <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">2 hours ago</time>
+                      </li>
+                      <li>
+                        <a href="#!"><i class="mdi-action-stars"></i> You have a new messagee</a>
+                        <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">3 days ago</time>
+                      </li>
+                      <li>
+                        <a href="#!"><i class="mdi-action-settings"></i> Check out your booking history!</a>
+                        <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">4 days ago</time>
+                      </li>
+                      <li>
+                        <a href="#!"><i class="mdi-editor-insert-invitation"></i> Office Space 930 has been booked</a>
+                        <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">6 days ago</time>
+                      </li>
+                      <li>
+                        <a href="#!"><i class="mdi-action-trending-up"></i> Generate monthly report</a>
+                        <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">1 week ago</time>
+                      </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- end header nav-->
+  </header>
+  <!-- END HEADER -->
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START MAIN -->
+  <div id="main">
+    <!-- START WRAPPER -->
+    <div class="wrapper">
+
+      <!-- START LEFT SIDEBAR NAV-->
+      <aside id="left-sidebar-nav">
+        <ul id="slide-out" class="side-nav fixed leftside-navigation">
+            <li class="user-details cyan darken-2">
+            <div class="row">
+                <div class="col col s4 m4 l4">
+                    <img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-image">
+                </div>
+                <div class="col col s8 m8 l8">
+                    <ul id="profile-dropdown" class="dropdown-content">
+                        <li><a href="#"><i class="mdi-action-face-unlock"></i> Profile</a>
+                        </li>
+                        <li><a href="#"><i class="mdi-action-settings"></i> Settings</a>
+                        </li>
+                        <li><a href="#"><i class="mdi-communication-live-help"></i> Help</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="mdi-action-lock-outline"></i> Lock</a>
+                        </li>
+                        <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">John Doe<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                    <p class="user-roal">Administrator</p>
+                </div>
+            </div>
+            </li>
+            <li class="bold"><a href="#" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
+            </li>
+           
+            <li class="bold active"><a href="#" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i> Messages <span class="new badge">4</span></a>
+            </li>
+            <li class="bold"><a href="#" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i>Issues</a>
+            </li>
+
+           
+        </ul>
+        <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan"><i class="mdi-navigation-menu"></i></a>
+        </aside>
+      <!-- END LEFT SIDEBAR NAV-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+      <!-- START CONTENT -->
+      <section id="content">
+
+        <!--start container-->
+        <div class="container">
+
+          <div id="mail-app" class="section">
+            <div class="row">
+              <div class="col s12">
+                <nav class="red">
+                  <div class="nav-wrapper deep-purple darken-4">
+                    <div class="left col s12 m5 l5">
+                      <ul>
+                        <li><a href="#!" class="email-type">Dashboard</a>
+                      </ul>
+                    </div>
+                    <div class="col s12 m7 l7 hide-on-med-and-down">
+                      <ul class="right">
+                        <li><a href="#!"><i class="mdi-content-create"></i></a>
+                        </li>
+                        <li><a href="#!"><i class="mdi-content-add-circle-outline"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </nav>
+              </div>
+              <div class="col s12">
+                <div id="email-list" class="col s10 m4 l4 card-panel z-depth-1">
+                  <ul class="collection">
+                    <li class="collection-item avatar email-unread">
+                      <i class="mdi-action-label icon deep-purple-text"></i>
+                      <span class="email-title">Auditorium</span>
+                      <p class="truncate grey-text ultra-small">Cultural Arts Center</p>
+                      <a href="#!" class="secondary-content"><span class="new badge blue">9</span></a>
+                    </li> <ul class="collection">
+                    <li class="collection-item avatar email-unread">
+                      <i class="mdi-action-label icon deep-purple-text"></i>
+                      <span class="email-title">Conference Room</span>
+                      <p class="truncate grey-text ultra-small">Cultural Arts Center</p>
+                      <a href="#!" class="secondary-content"></a>
+                    </li> <ul class="collection">
+                    <li class="collection-item avatar email-unread">
+                      <i class="mdi-action-label icon deep-purple-text"></i>
+                      <span class="email-title">Computer Lab</span>
+                      <p class="truncate grey-text ultra-small">Cultural Arts Center</p>
+                      <a href="#!" class="secondary-content"><span class="new badge blue">4</span></a>
+                    </li> <ul class="collection">
+                    <li class="collection-item avatar email-unread selected">
+                      <i class="mdi-action-label icon deep-purple-text"></i>
+                      <span class="email-title">Office Space</span>
+                      <p class="truncate grey-text ultra-small">Cultural Arts Center</p>
+                      <a href="#!" class="secondary-content"><span class="new badge blue">4</span></a>
+                    </li> <ul class="collection">
+                    <li class="collection-item avatar email-unread">
+                      <i class="mdi-action-label icon deep-purple-text"></i>
+                      <span class="email-title">Meeting Room</span>
+                      <p class="truncate grey-text ultra-small">Cultural Arts Center</p>
+                      <a href="#!" class="secondary-content"><span class="new badge blue">5</span></a>
+                    </li>
+                <li class="collection-item avatar email-unread">
+                      <i class="mdi-action-label icon deep-purple-text"></i>
+                      <span class="email-title">Classroom 345</span>
+                      <p class="truncate grey-text ultra-small">Cultural Arts Center</p>
+                      <a href="#!" class="secondary-content"></a>
+                    </li> <ul class="collection">
+                    <li class="collection-item avatar email-unread">
+                      <i class="mdi-action-label icon deep-purple-text"></i>
+                      <span class="email-title">Room 999</span>
+                      <p class="truncate grey-text ultra-small">Cultural Arts Center</p>
+                      <a href="#!" class="secondary-content"><span class="new badge blue">4</span></a>
+                    </li> <ul class="collection">
+                    <li class="collection-item avatar email-unread">
+                      <i class="mdi-action-label icon deep-purple-text"></i>
+                      <span class="email-title">Office 805</span>
+                      <p class="truncate grey-text ultra-small">Cultural Arts Center</p>
+                      <a href="#!" class="secondary-content"></a>
+                    </li>
+                
+                  </ul>
+                </div>
+                <div id="email-details" class="col s12 m8 l8 card-panel">
+                    <a class="waves-effect waves-light  btn right orange darken-3 modal-trigger" href="#modal1"><i class="mdi-content-add left"></i>New Booking</a>
+                  <p class="email-subject truncate">Office Space <small class="grey-text ultra-small">Cultural Arts Center</small>
+                  </p>
+                  <hr class="grey-text text-lighten-2">
+                  <div class="email-content-wrap">
+                    <div class="email-content">
+                    <ul class="collapsible collapsible-accordion" data-collapsible="expandable">
+                  <li>
+                    <div class="collapsible-header white-text deep-purple darken-4"><i class="mdi-action-assignment"></i>Space Details</div>
+                    <div class="collapsible-body grey-text text-darken-2">
+                       
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header deep-purple darken-4 white-text active"><i class="mdi-action-event"></i>Schedule</div>
+                    <div class="collapsible-body">
+                      <div id='calendar'></div>
+                    </div>
+                  </li>
+                </ul>
+                        <div id='calendar'></div>
+                    </div>
+                  </div>
+                  <hr>
+                </div>
+              </div>
+            </div>
+
+                      
+            <!-- Compose Email Structure -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <nav class="deep-purple darken-4 right">
+                  <div class="nav-wrapper">
+                    <div class="left col s4 m4 l4">
+                      <ul>
+                        <li><a href="#!" class="email-menu"><i class="modal-action modal-close  mdi-hardware-keyboard-backspace"></i></a>
+                        </li>
+                        <li><a href="#!" class="email-type">New Booking</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col s12 m4 l4 hide-on-med-and-down">
+                    </div>
+
+                  </div>
+                </nav>
+              </div>
+              <div class="model-email-content">
+                <div class="row">
+                  <form class="col s12">
+                    <!--<div class="row">
+                      <div class="input-field col s12">
+                        <input id="from_email" type="email" class="validate">
+                        <label for="from_email">From</label>
+                      </div>
+                    </div> -->
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input id="title" type="text" class="validate" placeholder="e.g. Team Meeting" autofocus>
+                        <label for="title">Title</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input id="subject" type="date" class="datepicker">
+                        <label for="subject">From</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                          <input placeholder="hours" id="first_name" type="text" class="validate">
+                          <label for="first_name">Duration</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input placeholder="minutes" id="last_name" type="text" class="validate">
+                          <label for="last_name">Duration</label>
+                        </div>
+                      </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <textarea id="comments" class="materialize-textarea" length="500"></textarea>
+                        <label for="comments">Comments</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                       
+                      <button class="btn waves-effect waves-light orange darken-3 right" type="submit" name="action">Save booking
+                        <i class="mdi-content-send right"></i>
+                      </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+    </div>
+    <!--end container-->
+
+    </section>
+    <!-- END CONTENT -->
+
+
+
+  </div>
+  <!-- END WRAPPER -->
+
+  </div>
+  <!-- END MAIN -->
+
+
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START FOOTER -->
+  <footer class="page-footer deep-purple darken-4">
+    <div class="footer-copyright">
+      <div class="container">
+        <span>Copyright © 2015 <a class="grey-text text-lighten-4" href="#" target="_blank">SlimSpace</a> All rights reserved.</span>
+        </div>
+    </div>
+  </footer>
+    <!-- END FOOTER -->
+
+
+
+    <!-- ================================================
+    Scripts
+    ================================================ -->
+    
+    <!-- jQuery Library -->
+    <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>    
+    <!--materialize js-->
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <!--prism-->
+    <script type="text/javascript" src="js/plugins/prism/prism.js"></script>
+    <!--scrollbar-->
+    <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <!-- chartist -->
+    <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>   
+    
+    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <!--custom-script.js - Add your own theme custom JS-->
+    <script type="text/javascript" src="js/custom-script.js"></script>
+        <script type="text/javascript" src="js/plugins/fullcalendar/lib/jquery-ui.custom.min.js"></script>
+    <script type="text/javascript" src="js/plugins/fullcalendar/lib/moment.min.js"></script>
+    <script type="text/javascript" src="js/plugins/fullcalendar/js/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="js/plugins/fullcalendar/fullcalendar-script.js"></script>
+    
+</body>
+
+</html>
